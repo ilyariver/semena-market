@@ -1,0 +1,31 @@
+@import "~src/assets/styles/scss/variables";
+
+.footer-column {
+  &__title {
+    margin-bottom: 45px;
+    padding-left: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__list {
+    &--uppercase {
+      text-transform: uppercase;
+    }
+  }
+
+  &__item {
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      background-color: $color-hover-gray;
+    }
+  }
+}

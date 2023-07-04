@@ -1,0 +1,10 @@
+@import "../../../../assets/styles/scss/variables";
+
+.ui-button {
+  transition: background-color 0.1s ease-in;
+  background-color: $color-green;
+  color: #fff;
+  &:hover {
+    background-color: darken($color-green, 5%);
+  }
+}

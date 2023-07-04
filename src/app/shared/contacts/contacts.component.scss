@@ -1,0 +1,23 @@
+@import "~src/assets/styles/scss/variables";
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  &--color {
+    .contacts__text--second {
+      color: $color-green;
+    }
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 24px;
+
+    &--first {
+      white-space: nowrap;
+    }
+
+    &--second {
+
+    }
+  }
+}

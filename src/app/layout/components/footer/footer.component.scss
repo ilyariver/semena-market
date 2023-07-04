@@ -1,0 +1,39 @@
+@import "~src/assets/styles/scss/variables";
+
+.footer {
+  padding: 80px 0 0;
+  background-color: $color-light-gray;
+
+  &__wrap {
+    padding-bottom: 38px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.20);
+  }
+
+  &__contacts {
+    display: block;
+  }
+}
+
+.footer-address {
+  margin-bottom: 36px;
+}
+
+.working-hours {
+  &__item {
+    font-weight: 300;
+  }
+}
+
+.footer-copyright {
+  padding: 18px 0;
+
+  &__text {
+    font-weight: 300;
+  }
+
+  &__pay {
+    &:not(:last-child) {
+      margin-right: 9px;
+    }
+  }
+}

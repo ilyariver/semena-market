@@ -1,0 +1,32 @@
+<div class="selected">
+  <div class="selected__favorites">
+    <div class="selected__name">{{ text }}</div>
+    <div class="selected__content d-flex">
+      <div class="selected__icon">
+        <svg
+          width="31"
+          height="29"
+          viewBox="0 0 31 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          *ngIf="text === 'Избранное'"
+        >
+          <path d="M27.6488 15.082L15.5 27.5661L3.35125 15.082C0.216253 11.8604 0.21625 6.62628 3.35124 3.40473C6.4714 0.198424 11.5186 0.198424 14.6388 3.40473L14.7833 3.55328L15.5 4.28973L16.2167 3.55327L16.3612 3.40473C19.4814 0.198429 24.5286 0.198426 27.6488 3.40473C30.7837 6.62628 30.7837 11.8604 27.6488 15.082Z" stroke="#3D3D3F" stroke-width="2"/>
+        </svg>
+
+        <svg
+          width="22"
+          height="29"
+          viewBox="0 0 22 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          *ngIf="text === 'Корзина'"
+        >
+          <path d="M4.4 5.46154H5.4V4.46154V3.34615C5.4 2.03727 6.44279 1 7.7 1H14.3C15.5572 1 16.6 2.03727 16.6 3.34615V4.46154V5.46154H17.6H19.1348L20.9178 28H1.08223L2.86519 5.46154H4.4ZM15.4 5.46154H16.4V4.46154V3.34615C16.4 2.191 15.4728 1.23077 14.3 1.23077H7.7C6.52715 1.23077 5.6 2.191 5.6 3.34615V4.46154V5.46154H6.6H15.4Z" fill="white" stroke="#3D3D3F" stroke-width="2"/>
+        </svg>
+        <div class="selected__count" *ngIf="count">{{ count }}</div>
+      </div>
+      <div class="selected__sum" *ngIf="sum">{{ sum }}₽</div>
+    </div>
+  </div>
+</div>
